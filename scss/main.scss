@@ -1,0 +1,73 @@
+@import "variable";
+
+body {
+  background: $light-gray;
+  display: flex;
+  flex-direction: column;
+  font-family: "Outfit", sans-serif;
+  font-size: $font-size-paragraph;
+}
+
+.container {
+  background: $white;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  padding: 30px;
+  margin: 90px 30px;
+}
+
+img {
+  text-align: center;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+p:first-child {
+  color: $dark-blue;
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+}
+
+p:last-child {
+  color: $grayish-blue;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    margin-left: 25rem;
+    height: 50rem;
+    width: 33rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  img {
+    padding: 10px;
+    height: 28rem;
+    width: 29rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  p {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 30px;
+  }
+}
